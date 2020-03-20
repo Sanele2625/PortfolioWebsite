@@ -1,0 +1,107 @@
+/*Styling the body element */
+body{
+    font-family: sans-serif;
+    color: #3c3939;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+/*Styling the side navigation menu */
+.sidebar{
+    overflow: auto;
+    background-color:#f1f1f1;
+    margin: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+}
+/*Styling the sidebar links*/
+.sidebar a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}
+/*Active/ current link */
+.sidebar a.active{
+    background-color:#4CAF50;
+    color: white
+}
+/*Links on mouse-over */
+.sidebar a:hover(.active){
+    background-color: #555;
+    color: white;
+}
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+.sidebar{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.sidebar a { float: left;}
+div.content {margin-left: 0;}
+}
+/* On screens that are less than 400px, display the bar vertically instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a{
+        text-align: center;
+        float: none;
+    }
+}
+/*Styling the form-control */
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+/*Styling the form-input */
+input{
+    height: 60px;
+    width: 50px;
+}
+/*Styling the form-submit button */
+form.submit{
+    background: #ff5722;
+    border-color: transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+/*Styling the form-submit hover/mouse-over */
+form.submit:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.profile-card{
+    width: 400px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 5);
+}
+.image-container{
+    position: relative;
+}
+.main-container{
+    padding: 20px;
+}
+.title{
+    position: absolute;
+    left: 150px;
+    bottom: 0;
+}
