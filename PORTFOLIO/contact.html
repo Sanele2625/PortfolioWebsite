@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+   <html lang="en">
+     <head>
+    <title>CONTACT FORM</title>
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+         <body>
+           <!--Creating the navigation bar with links-->
+	      <div class="navbar">
+          <a class="active" href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+	      </div>
+            <!--Creating the contact form-->
+              <div class="contact-title">
+              <h1>CONTACT ME</h1>
+             </div>
+             <div class="contact-form">
+               <form id="contact-form"> 
+                 <input name="name" id="name" type="text" class="form-control" placeholder="Enter Your Name" required>
+                 <br>
+                 <input name="email" id="email" type="email" class="form-control" placeholder="Enter Your Email" required>
+                 <br>
+                 <textarea name="message" id="message" class="form-control" placeholder="Message" rows="4" required></textarea>
+                 <br>
+                 <div class="g-recaptcha" data-sitekey="6LeixeUUAAAAALRtW8iw_FfiVy-Uk_fhyRNHn_T"></div>
+                 <br>
+                 <input type="submit" class="form-control submit" value="SEND MESSAGE">
+               </form>
+             </div>
+            <!--Creating a foooter with social media icons--> 
+             <div class="footer">
+               <a href="https://wwww.facebook.com/sanele.mnaphu.50"><img src='facebook.png' height="50" alt="Facebook icon" hspace="5"></a>
+               <a href="https://twitter.com/MnaphuSanele"><img src='Twitter.png' height="50" alt="Twitter icon" hspace="5"></a>
+               <a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><img src='Linkedin.png' height="50" alt="Linkedin icon" hspace="5"></a>
+             </div>
+         </body>
+   </html>

@@ -1,0 +1,169 @@
+/*Styling the body element */
+body {
+    font-family: sans-serif;
+    background-image: url('william-warby-ld4wZGqlLF4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/*Styling the h1, h2, h3 and h4 elements */
+h1 {
+    font-size: 40px;
+    color: rebeccapurple;
+    text-align: center;
+    text-decoration: none;
+}
+h2 {
+    font-size: 40px;
+    color: seagreen;
+    text-align: center;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+h4 {
+    font-size: 40px;
+    color: #ab987a;
+    text-align: center;
+    text-decoration: none;
+}
+/*Styling the p element */
+p {
+font-size:20px;
+}
+.contact-title{
+    margin-top: 100px;
+    color: #fff;
+}
+.contact-title h1 {
+    font-size: 32px;
+    line-height: 10px
+}
+.contact-title h2 {
+    font-size: 16px;
+}
+form {
+    margin-top: 50px;
+    transition: all 5s ease-in-out;
+}
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+input {
+    height: 45px;
+}
+form .submit{
+    background-color: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+form .submit:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+/*Styling the top navigation bar */
+.navbar {
+    background-color:#6bbaa7;
+    overflow: hidden;
+}
+/*Styling the top navigation bar links*/
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Right-aligning the links */
+.navbar a.right{
+   float: right;
+}
+/* Change color  on mouse-over */
+.navbar a:hover {
+    background-color: #555;
+    color: white;
+}
+/* Ensure proper sizing */
+*{
+    box-sizing: border-box;
+}
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Sidebar/left column styling */
+.left {
+    flex: 33.33%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+/* Middle column styling */
+.middle {
+    flex:33.33%;
+    background-color: burlywood;
+    background-size: cover;
+    padding: 20px;
+}
+/* Right column styling */
+.right {
+    flex: 33.33%;
+    background-color: azure;
+    padding: 20px;
+}
+/* Styling the container element */
+.container {
+    width: 100%;
+    background-color: #ddd;
+}
+/* Responsive layout- When the screen is less than 1000px wide, make the 3 columns be on top of each other 
+instead of next to each other */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-direction: column;
+    }
+}
+/* Responsive layout- When the screen is less than 640px wide, make the 3 columns be on top of each other 
+instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+/* Responsive layout- When the screen is less than 400px wide, make the navigation links be on top of each other 
+instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+ /* Styling the fixed footer */
+ .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #6bbaa7;
+    color: white;
+    text-align: center;
+}
